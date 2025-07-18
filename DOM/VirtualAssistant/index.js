@@ -45,11 +45,13 @@ recognition.onresult = (event) =>{
 
 micBtn.addEventListener("click", ()=>{
     recognition.start();
-    micBtn.style.display = "none";
+    micBtn.style.display = "flex";
     voice.style.display = "block";
 })
 
 function takeCommand(msg){
+     micBtn.style.display = "display";
+    voice.style.display = "none";
     if(msg.includes("hello") || msg.includes("hey")|| msg.includes("hi")){
         speak("Hello, what can i help with");
     }else if(msg.includes("Who are you")){
