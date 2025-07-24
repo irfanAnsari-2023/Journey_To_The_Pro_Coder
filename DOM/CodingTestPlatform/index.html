@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Test Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="heading">Coding Test Platform</h1>
+      </div>
+
+      <div class="question-selection">
+        <div class="one-by-four slides fade">
+          <div class="numberText">1 / 4</div>
+          <h3 class="optionHeading">
+            Select question's level you want to test!!!
+          </h3>
+
+          <div class="label-input">
+            <input
+              type="checkbox"
+              id="easy"
+              name="option1"
+              value="easy"
+              checked
+            />
+            <label for="easy"> Easy</label>
+          </div>
+
+          <div class="label-input">
+            <input type="checkbox" id="medium" name="option2" value="medium" />
+            <label for="medium"> Medium</label>
+          </div>
+
+          <div class="label-input">
+            <input type="checkbox" id="hard" name="option3" value="hard" />
+            <label for="hard"> Hard </label>
+          </div>
+        </div>
+
+        <div class="two-by-four slides fade">
+          <div class="numberText">2 / 4</div>
+          <h3 class="optionHeading">Select topics you want to include!!!1</h3>
+          <div class="label-input">
+            <input
+              type="checkbox"
+              id="jsBasics"
+              name="topic1"
+              value="jsBasics"
+            />
+            <label class="slideTwoLabels" for="jsBasics">JS Basics</label>
+          </div>
+          <div class="label-input">
+            <input
+              type="checkbox"
+              id="conditionals"
+              name="topic2"
+              value="conditionals"
+            />
+            <label class="slideTwoLabels" for="conditionals">
+              Conditionals</label
+            >
+          </div>
+
+          <div class="label-input">
+            <input type="checkbox" id="loops" name="topic3" value="loops" />
+            <label class="slideTwoLabels" for="loops"> Loops</label>
+          </div>
+
+          <div class="label-input">
+            <input
+              type="checkbox"
+              id="functions"
+              name="topic4"
+              value="functions"
+            />
+            <label class="slideTwoLabels" for="functions"> Functions</label>
+          </div>
+
+          <div class="label-input">
+            <input type="checkbox" id="strings" name="topic5" value="strings" />
+            <label class="slideTwoLabels" for="strings"> Strings</label><br />
+          </div>
+
+          <div class="label-input">
+            <input type="checkbox" id="arrays" name="topic6" value="arrays" />
+            <label class="slideTwoLabels" for="arrays"> Arrays</label>
+          </div>
+
+          <div class="label-input">
+            <input
+              type="checkbox"
+              id="twoDArray"
+              name="topic7"
+              value="twoDArray"
+            />
+            <label for=""> 2D Arrays</label>
+          </div>
+
+          <div class="label-input">
+            <input
+              type="checkbox"
+              id="searching"
+              name="topic8"
+              value="searching"
+            />
+            <label for="searching"> Searching</label>
+          </div>
+
+          <div class="label-input">
+            <input type="checkbox" id="sorting" name="topic9" value="sorting" />
+            <label for="sorting"> Sorting</label>
+          </div>
+
+          <div class="label-input">
+            <input type="checkbox" id="setMap" name="topic9" value="setMap" />
+            <label for="setMap"> Sets & Maps </label>
+          </div>
+        </div>
+
+        <div class="three-by-four slides fade">
+          <div class="numberText">3 / 4</div>
+          <label for="noOfQuestions"
+            ><h3 class="optionHeading">Select no. of questions</h3></label
+          >
+          <input type="number" id="noOfQuestions" />
+        </div>
+
+        <div class="four-by-four slides fade">
+          <div class="numberText">4 / 4</div>
+          <label for="timeForQuestions"
+            ><h3 class="optionHeading">Select time of your Test!!!</h3></label
+          >
+          <input type="number" id="timeForQuestions" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <div class="testBtn">
+        <button class="start-test">Start Test</button>
+      </div>
+
+      <div class="question-space">
+        <div class="question-list"></div>
+        <div class="actual-questions"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

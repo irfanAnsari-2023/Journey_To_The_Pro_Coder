@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #46a85e;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  background-color: #000;
+}
+.question-selection {
+  max-width: 700px;
+  background-color: white;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.question-space {
+  background-color: #222;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.optionHeading {
+  font-size: 25px;
+  padding: 10px;
+}
+/* .slides {
+  display: none;
+} */
+.numberText {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+input[type="number"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #333;
+  border-radius: 50%;
+  user-select: none;
+  transform: translateY(-50%);
+}
+.prev {
+  left: -50px;
+}
+.next {
+  right: -50px;
+}
+
+.dot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.dot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.4s ease;
+}
+.active,
+.dot:hover {
+  background-color: #333;
+}
+.fade {
+  animation: fade 1s ease-in-out;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.two-by-four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.label-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  margin: 5px;
+  /* background-color: #f0f0f0; */
+  border-radius: 5px;
+}
+/* .slideTwoLabels{
+    padding: 5px;
+    margin: 5px;
+    background-color: #aef1bf;
+    border-radius: 10px;
+} */
+.testBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.start-test {
+  text-align: center;
+  background-color: #40ec6b;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
