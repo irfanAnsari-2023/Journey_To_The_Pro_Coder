@@ -1,32 +1,26 @@
 import React from 'react'
-import StyleCard from './components/StyleCard'
-import ProfileCard from './components/ProfileCard'
-import IconComponent from './components/IconComponent'
-import Move from './components/Move'
-import Copy from './Copy'
-import Counter from './components/Counter'
-import TodoList from './components/TodoList'
-import Profile from './components/Profile'
-import ShoppingList from './components/ShoppingList'
+
+import { UserProvider } from './components/UserContext';
+import UserProfile from './components/UserProfile';
+import UpdateUser from './components/UpdateUser';
+import CounterUseReducer from './components/CounterUseReducer';
+
+
+
+
 
 
 const App = () => {
   return (
-    <div>
-    <StyleCard />
-    <ProfileCard />
-    <IconComponent />
-    <Move />
-    <Copy />
+    <CounterUseReducer />
 
-    <Counter />
-
-    <TodoList />
-
-    <Profile />
-
-    <ShoppingList />
-     </div>
+    //  <UserProvider>
+    //   <div>
+    //     <h1>React Context Demo</h1>
+    //     <UserProfile /> 
+    //   <UpdateUser />
+    //   </div>
+    // </UserProvider>
 
   )
 }
